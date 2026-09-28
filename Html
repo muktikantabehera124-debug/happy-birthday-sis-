@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday! 🎁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Gift Box -->
+  <div class="gift-container" id="giftBox" onclick="openGift()">
+    <div class="gift-box">🎁</div>
+    <p class="tap-text">Tap to open your gift!</p>
+  </div>
+
+  <!-- Letter and Questions Content -->
+  <div class="content-section" id="content">
+    
+    <!-- Birthday Letter -->
+    <div class="letter">
+      <h2>🎉 Happy Birthday Sister! 🎂</h2>
+      <p>
+        Wishing you the happiest birthday ever! You bring so much joy, laughter, and light into everyone's life around you. 
+        Thank you for being such an incredible person and making every moment memorable. 
+        May this year bring you all the love, happiness, success, and delicious treats you deserve! 💖
+      </p>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="question-block" id="q1">
+      <div class="question-title">Q1: What do you want to be in the future?</div>
+      <div class="options">
+        <button class="btn-secondary" id="btn-fav-cousin" onclick="growWifeyBtn()">My fav cousin</button>
+        <button class="btn-primary" id="btn-wifey" onclick="answerQ1()">Jiju's fav wifey</button>
+      </div>
+    </div>
+
+    <!-- Question 2 (Hidden initially) -->
+    <div class="question-block" id="q2" style="display: none;">
+      <div class="question-title">Q2: What is your wish?</div>
+      <div class="options" style="min-height: 100px;">
+        <button class="btn-primary" onclick="finishQuiz()">Want jiju for your whole life</button>
+        <button class="btn-secondary" id="moving-btn" onmouseover="moveButton()" onclick="moveButton()">Want your phone for your whole life</button>
+      </div>
+    </div>
+
+    <!-- Final Message -->
+    <div id="final-message" style="display: none; margin-top: 20px;">
+      <h3 style="color: #4caf50;">Yay! Perfect Choices! 🥰💖</h3>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
